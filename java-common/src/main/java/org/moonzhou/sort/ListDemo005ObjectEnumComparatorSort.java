@@ -13,7 +13,7 @@ import java.util.*;
  * @description:
  * @date 2023/8/26 17:43
  */
-public class ListDemo004ObjectEnumComparatorSort {
+public class ListDemo005ObjectEnumComparatorSort {
 
     public static void main(String[] args) {
         List<Week> sortList1 = init();
