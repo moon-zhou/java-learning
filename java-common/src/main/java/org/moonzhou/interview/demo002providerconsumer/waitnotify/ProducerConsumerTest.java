@@ -6,9 +6,6 @@ import java.util.concurrent.TimeUnit;
 
 public class ProducerConsumerTest {
 
-    public static final Object LOCKER = new Object();
-
-
     public static void main(String[] args) {
         Queue<String> urls = new LinkedList<>();
 

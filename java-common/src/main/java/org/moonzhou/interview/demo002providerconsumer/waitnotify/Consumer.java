@@ -12,7 +12,7 @@ public class Consumer<T> {
     public T consume() throws InterruptedException {
         synchronized (tasks) {
             // 如果不用while，用if，会出现虚假唤醒，
-            // 类似重入的问题，上一次是消费者线程在处理，唤醒后，依然是消费者线程拿到synchronize锁（在容量为0的情况下同一类型不能连续执行两次），造成没有了还在消费
+            // 类似重入的问题，上一次是消费者线程在处理，唤醒后，依然是消费者线程拿到synchronize锁（在容量为0的情况下同一类型不能连续执行两次），造成没有了还在消费(唤醒同类，伪唤醒)
             // 所以使用while而不能使用if
             while (tasks.size() == 0) {
                 System.out.println("消费者线程进入等待：" + Thread.currentThread().getName());
