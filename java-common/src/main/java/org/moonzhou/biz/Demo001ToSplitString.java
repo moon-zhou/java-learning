@@ -13,7 +13,8 @@ import java.util.stream.Collectors;
 public class Demo001ToSplitString {
     private static final String SPLIT_CHAR = ",";
 
-    private static final List<String> DATA = Arrays.asList("moon1", "moon2", "moon3");
+    // private static final List<String> DATA = Arrays.asList("moon1", "moon2", "moon3");
+    private static final List<String> DATA = List.of("moon1");
 
     public static void main(String[] args) {
         manualSplicing();
@@ -35,7 +36,7 @@ public class Demo001ToSplitString {
         }
         String substring = builder.substring(0, builder.length() - 1);
 
-        System.out.println("String.join() 转化后的字符串 : " + substring);
+        System.out.println("append 转化后的字符串 : " + substring);
     }
 
     private static void stringJoin() {
