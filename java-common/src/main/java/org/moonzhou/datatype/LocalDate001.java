@@ -1,6 +1,7 @@
 package org.moonzhou.datatype;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 /**
  * @author moon zhou
@@ -11,7 +12,9 @@ import java.time.LocalDate;
 public class LocalDate001 {
     public static void main(String[] args) {
         // change 2 today
-        LocalDate taday = LocalDate.of(2023, 11, 10);
+        LocalDate today = LocalDate.of(2023, 11, 10);
+
+        System.out.println(today.format(DateTimeFormatter.ofPattern("yyyy-MM")));
 
         LocalDate now = LocalDate.now();
         LocalDate yesterday = now.minusDays(1);
@@ -25,7 +28,7 @@ public class LocalDate001 {
         System.out.println(tomorrow.isAfter(now));
 
         System.out.println();
-        System.out.println(now.isEqual(taday));
+        System.out.println(now.isEqual(today));
 
         System.out.println();
         System.out.println(yesterday.isAfter(now));
