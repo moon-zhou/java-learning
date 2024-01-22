@@ -18,6 +18,8 @@
         <logback.version>1.4.7</logback.version>
         <slf4j.version>2.0.5</slf4j.version>
         <jackson.varsion>2.15.2</jackson.varsion>
+
+        <commons-lang3.version>3.14.0</commons-lang3.version>
     </properties>
 
     <dependencies>
@@ -66,6 +68,11 @@
             <version>${jackson.varsion}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
