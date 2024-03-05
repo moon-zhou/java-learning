@@ -13,6 +13,8 @@ public class StringFormatDemo001 {
         String stringResult = String.format(format, "this is a string.");
         System.out.println(stringResult);
 
+        System.out.println(String.format("%%%s%%", "boy"));
+
         String longResult = String.format(format, 999L);
         System.out.println(longResult);
     }
