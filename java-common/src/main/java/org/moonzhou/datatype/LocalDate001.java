@@ -17,6 +17,7 @@ public class LocalDate001 {
         System.out.println(today.format(DateTimeFormatter.ofPattern("yyyy-MM")));
 
         LocalDate now = LocalDate.now();
+        System.out.println(now.toString());
         LocalDate yesterday = now.minusDays(1);
         LocalDate tomorrow = now.plusDays(1);
 
