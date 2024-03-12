@@ -13,6 +13,10 @@ import java.util.stream.Collectors;
 public class Demo001ToSplitString {
     private static final String SPLIT_CHAR = ",";
 
+    /*
+     * List.of() 是 Java 9 引入的一个新方法，它属于 Java 集合框架的一部分，用于创建不可变（immutable）的列表对象。它接受可变数量的参数，返回一个包含这些参数的不可变列表。 线程安全，泛型支持。
+     * Arrays.asList() 基于数组的，它将现有数组包装为一个列表。 内部的：java.util.Arrays.ArrayList
+     */
     // private static final List<String> DATA = Arrays.asList("moon1", "moon2", "moon3");
     private static final List<String> DATA = List.of("moon1");
 
