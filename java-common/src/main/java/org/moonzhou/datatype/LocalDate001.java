@@ -15,9 +15,11 @@ public class LocalDate001 {
         LocalDate today = LocalDate.of(2023, 11, 10);
 
         System.out.println(today.format(DateTimeFormatter.ofPattern("yyyy-MM")));
+        System.out.println(today.format(DateTimeFormatter.ofPattern("MM-dd")));
 
         LocalDate now = LocalDate.now();
         System.out.println(now.toString());
+        System.out.println(now.format(DateTimeFormatter.ofPattern("MM-dd")));
         LocalDate yesterday = now.minusDays(1);
         LocalDate tomorrow = now.plusDays(1);
 
