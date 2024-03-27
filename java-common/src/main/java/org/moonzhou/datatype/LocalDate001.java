@@ -37,5 +37,12 @@ public class LocalDate001 {
         System.out.println(yesterday.isAfter(now));
         System.out.println(now.isAfter(now));
 
+
+        LocalDate localDate = LocalDate.of(2024, 3, 20);
+        System.out.println(localDate);
+        System.out.println(localDate.toString());
+        LocalDate halfYearDate = localDate.minusMonths(6L);
+        System.out.println(localDate);
+        System.out.println(halfYearDate);
     }
 }
