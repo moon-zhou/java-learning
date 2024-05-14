@@ -44,5 +44,13 @@ public class LocalDate001 {
         LocalDate halfYearDate = localDate.minusMonths(6L);
         System.out.println(localDate);
         System.out.println(halfYearDate);
+
+        System.out.println();
+        LocalDate firstDay = localDate.withDayOfMonth(1);
+        LocalDate secondDay = localDate.withDayOfMonth(2);
+        LocalDate nextMonthFirstDay = localDate.plusMonths(1).withDayOfMonth(1);
+        System.out.println(firstDay);
+        System.out.println(secondDay);
+        System.out.println(nextMonthFirstDay);
     }
 }
