@@ -17,5 +17,9 @@ public class Demo001AtomicInteger {
         AtomicInteger order2 = new AtomicInteger(0);
         System.out.println(order2.incrementAndGet()); // 1
         System.out.println(order2); // 1
+
+        AtomicInteger order3 = new AtomicInteger();
+        System.out.println(order3.incrementAndGet()); // 1
+        System.out.println(order3); // 1
     }
 }
