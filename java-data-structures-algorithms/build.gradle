@@ -1,0 +1,29 @@
+plugins {
+	id 'java'
+}
+
+group = 'org.moonzhou'
+version = '0.0.1-SNAPSHOT'
+
+def javaHomeFromEnv = System.getenv("JAVA_21_HOME")
+tasks.withType(JavaCompile) {
+	options.fork = true
+	options.forkOptions.javaHome = file(javaHomeFromEnv)
+}
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
