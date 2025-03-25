@@ -9,7 +9,7 @@ import java.util.List;
  * @description:
  * @date 2023/9/25 14:54
  */
-public class Demo001List {
+public class Demo001ListGetFirst {
     public static void main(String[] args) {
         test1();
 

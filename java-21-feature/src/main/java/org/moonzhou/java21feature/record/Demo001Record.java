@@ -16,15 +16,15 @@ public class Demo001Record {
         }
 
         // 可以直接解构记录字段
-        /* if (p instanceof Person(String name, int age)) {
+        if (p instanceof Person(String name, int age)) {
             System.out.println("name: " + name + ", age:" + age);
-        } */
+        }
 
         // 或者
-        /* switch (p) {
+        switch (p) {
             case Person(String n, int a) ->{
                 System.out.println("name: " + n + ", age: " + a);
             }
-        } */
+        }
     }
 }
