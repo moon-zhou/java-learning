@@ -17,7 +17,8 @@ package org.moonzhou.gc;
  *
  */
 public class TriggerGCDemo {
-    private static final int BASE_SPACE =1024*1024;
+    // 1M
+    private static final int BASE_SPACE = 1024 * 1024;
     private byte[] bytes = new byte[BASE_SPACE];
     
     // 重写finalize()方法（仅用于演示，生产环境不推荐使用）
